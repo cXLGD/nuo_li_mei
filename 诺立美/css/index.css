@@ -1,0 +1,216 @@
+*{
+    padding:0;
+    margin:0;
+}
+.my-banner{
+    background-color:rgba(255,255,255,0);
+    border:0;
+    z-index:1;
+}
+.brank{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    position:absolute;
+    top:-45px;
+    left:145px;
+}
+.brank img{
+    margin: 80px 0 0 30px;
+}
+.navbar-brand{
+    position:relative;
+}
+.my-nav{
+    background-color:#fff;
+    border-radius: 25px;
+    font-size:15px;
+    margin-right:60px;
+    margin-top:50px;
+}
+.nav>li>a {
+    padding: 5px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.navbar-default .my-nav .active a{
+    border-radius:20px;
+    background-color:#fff;
+}
+.navbar-default .my-nav .active a:hover{
+    background-color:#fc8136;
+    color:#fff;
+}
+.navbar-form{
+    padding:10px;
+    margin: 0;
+}
+.form-group{
+    position:relative;
+}
+.sub{
+    height:30px;
+    padding:0 12px;
+    border-radius:15px;
+    background-color:#ebebeb;
+}
+.icon-sousuo{
+    color:#4a5663;
+    border:0;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    background-color:rgba(235,235,235,0);
+}
+.sina{
+    padding:5px 10px;
+    border-radius:0 0 15px 15px;
+    position:absolute;
+    top:0;
+    right:95px;
+    background-color:rgba(56, 43, 43, .1)
+}
+.sina img{
+    margin-top:-4px;
+}
+
+/* banner */
+.carousel {
+    overflow:hidden;
+    top: -120px;
+    /* z-index: -1; */
+}
+.banner-left{
+    width:100px;
+    height:40px;
+    top:50%;
+    left:-40px;
+    transform:rotate(145deg);
+    border-radius:20px;
+    background-color:rgba(255,255,255)
+}
+.banner-left .stiangle{
+    left: 8px;
+    height: 0px;
+    width: 0px;
+    border-top: solid 20px rgba(255,255,255,.5);
+    border-left: solid 20px transparent;
+    position: absolute;
+    top: 8px;
+    transform: rotate(75deg)
+}
+.banner-right{
+    width:100px;
+    height:40px;
+    top:50%;
+    right:-40px !important;
+    transform:rotate(-145deg);
+    border-radius:20px;
+    background-color:rgba(255,255,255)
+}
+.banner-right .stiangle{
+    left: 70px;
+    border-top: solid 20px rgba(255,255,255,.5);
+    border-left: solid 20px transparent;
+    position: absolute;
+    top: 8px;
+    transform: rotate(190deg)
+}
+
+/* more */
+.shop-items{
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+}
+.shop-items .my-img{
+    width:18%;
+}
+
+/* 底部 */
+footer{
+    margin-top:30px;
+}
+.foot-right{
+    height:36px;
+    margin-top:15px;
+}
+.foot-right span{
+    padding:10px;
+}
+.foot-right span a{
+    color:#000;
+}
+
+a:hover{
+    text-decoration:none;
+}
+
+/* px端 */
+@media(min-width:992px) and (max-width:1199px){
+    /* 导航栏 */
+    .brank{
+        width:150px;
+        height:150px;
+        left:75px;
+    }
+    .my-nav{
+        margin-right:35px;
+    }
+    .sina{
+        right:65px;
+    }
+    .brank img{
+        margin:60px 0 0 7px;
+    }
+}
+/* 平板端 */
+@media(min-width:768px) and (max-width:991px){
+    /* 导航栏 */
+    .brank{
+        width:120px;
+        height:120px;
+        left:40px;
+    }
+    .brank img{
+        margin:46px 0 0 0 ;
+    }
+    .my-nav{
+        margin-right:-10px;
+    }
+    .nav>li>a{
+        padding:5px 5px;
+    }
+    .sina{
+        right:20px;
+    }
+}
+/* 手机端 */
+@media(max-width:767px){
+    /* 导航栏 */
+    .brank{
+        width:120px;
+        height:120px;
+        left:30px;
+    }
+    .brank img{
+        margin:46px 0 0 0 ;
+    }
+    .sina{
+        display:none;
+    }
+    .navbar-default .navbar-collapse, 
+    .navbar-default .navbar-form{
+        border:0;
+    }
+
+    footer img{
+        width: 80px;
+        margin-top: 10px
+    }
+    .foot-right span {
+        padding: 10px 5px;
+        font-size:10px;
+    }
+}

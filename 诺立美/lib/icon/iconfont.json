@@ -1,0 +1,72 @@
+{
+  "id": "1505200",
+  "name": "shopping",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1048852",
+      "name": "通知",
+      "font_class": "icon_notice",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "2488134",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "2681674",
+      "name": "抽奖",
+      "font_class": "choujiang",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "2681706",
+      "name": "闪电",
+      "font_class": "shandian",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "4495244",
+      "name": "s-sina",
+      "font_class": "s-sina",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "4719756",
+      "name": "兑换商城",
+      "font_class": "duihuanshangcheng",
+      "unicode": "e6b0",
+      "unicode_decimal": 59056
+    },
+    {
+      "icon_id": "5025788",
+      "name": "促销",
+      "font_class": "cuxiao",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "6170293",
+      "name": "扫一扫",
+      "font_class": "saoyisao",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "6246287",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    }
+  ]
+}
