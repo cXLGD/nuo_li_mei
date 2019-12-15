@@ -81,6 +81,9 @@
     top: -120px;
     /* z-index: -1; */
 }
+.carousel .item img{
+    width:100%;
+}
 .banner-left{
     width:100px;
     height:40px;
@@ -92,8 +95,6 @@
 }
 .banner-left .stiangle{
     left: 8px;
-    height: 0px;
-    width: 0px;
     border-top: solid 20px rgba(255,255,255,.5);
     border-left: solid 20px transparent;
     position: absolute;
@@ -119,6 +120,9 @@
 }
 
 /* more */
+.more{
+    margin-top:-100px;
+}
 .shop-items{
     display:flex;
     justify-content:space-around;
@@ -190,12 +194,7 @@ a:hover{
 @media(max-width:767px){
     /* 导航栏 */
     .brank{
-        width:120px;
-        height:120px;
-        left:30px;
-    }
-    .brank img{
-        margin:46px 0 0 0 ;
+        display:none;
     }
     .sina{
         display:none;
@@ -210,7 +209,18 @@ a:hover{
         margin-top: 10px
     }
     .foot-right span {
-        padding: 10px 5px;
+        padding: 10px 36px 10px 0px;
         font-size:10px;
+    }
+}
+
+@media(max-width:620px){
+    .banner-left{
+        top:75%;
+        left:-55px;
+    }
+    .banner-right{
+        top:75%;
+        right:-55px !important;
     }
 }
