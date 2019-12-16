@@ -34,11 +34,8 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.navbar-default .my-nav .active a{
+.navbar-default .my-nav li:hover a{
     border-radius:20px;
-    background-color:#fff;
-}
-.navbar-default .my-nav .active a:hover{
     background-color:#fc8136;
     color:#fff;
 }

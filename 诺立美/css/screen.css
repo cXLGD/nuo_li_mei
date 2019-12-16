@@ -75,63 +75,54 @@
     margin-top:-4px;
 }
 
-/* 路径导航 */
-.nav2{
+/* 筛选 */
+.screen{
     margin-top:100px;
 }
-.breadcrumb{
-    background-color:rgba(255,255,255,0);
+.screen span{
+    float:left;
+    margin-top:15px;
+    font-size:16px;
 }
-.breadcrumb>li+li:before{
-    content:'>>';
-    color:#000;
-}
-.breadcrumb a, .breadcrumb>.active{
-    color:#000;
-}
-
-/* 商品展示 */
-.content h3{
-    margin-bottom:30px;
-}
-.content span{
-    background-color:#424f5c;
-    color:#fff;
-    padding:5px 15px;
-}
-.content ul{
-    height:30px;
-    margin-top:40px;
+.screen ul{
+    width:500px;
+    height:50px;
     list-style:none;
+    margin-left:50px;
+    border-radius:25px;
+    background-color:#424f5c;
 }
-.content ul li{
-    padding:5px 15px;
+.screen ul li{
+    line-height:50px;
+    text-align:center;
+    width:100px;
+    height:100%;
+    float:left; 
 }
-.content ul li:hover{
-    border-top:3px solid #85b200;
+.screen ul li:first-child{
+    border-radius:25px 0 0 25px;
 }
-.test{
-    width: 500px;
-    margin-left: 15px;
-    margin-top: 20px;
+.screen ul li:last-child{
+    border-radius:0 25px 25px 0;
+}
+.screen ul li a{
+    font-size:16px;
+    color:#fff;
+}
+.screen ul .active{
+    background-color:#a32675;
 }
 
-/* more */
-.more p{
-    background-color:#ededed;
+/* shoppings */
+.shoppings{
+    margin-top:100px;
 }
-.more span{
-    padding:2px 15px;
-    font-size:15px;
-    background-color:#f5f5f5;
-}
-.shop-items{
+.shoppings .shopping{
     display:flex;
-    justify-content:space-around;
-    text-align:center;
+    flex-wrap: wrap;
 }
-.shop-items p{
-    background-color:#fff;
+.shoppings .shopping p{
+    text-align:center;
 }
 
 /* 底部 */
@@ -153,10 +144,13 @@ a:hover{
     text-decoration:none;
 }
 
+
 /* px端 */
 @media(min-width:992px) and (max-width:1199px){
     /* 导航栏 */
     .brank{
+        width:150px;
+        height:150px;
         left:75px;
     }
     .my-nav{
@@ -165,14 +159,18 @@ a:hover{
     .sina{
         right:65px;
     }
+    .brank img{
+        margin:60px 0 0 7px;
+    }
 }
+
 /* 平板端 */
 @media(min-width:768px) and (max-width:991px){
     /* 导航栏 */
     .brank{
         width:120px;
         height:120px;
-        left:90px;
+        left:40px;
     }
     .brank img{
         margin:46px 0 0 0 ;
@@ -181,39 +179,18 @@ a:hover{
         margin-right:-10px;
     }
     .nav>li>a{
-        padding:0 5px;
+        padding:5px 5px;
     }
     .sina{
         right:20px;
     }
-
-    /* 路径导航 */
-    .nav2 {
-        margin-top: 50px;
-    }
-
-    /* 产品详细 */
-    .detail .content h3{
-        font-size:20px;
-    }
-    .detail .content ul{
-        margin-top:20px;
-    }
-    .detail .test{
-        width:340px;
-        margin-top:10px;
-    }
 }
+
 /* 手机端 */
 @media(max-width:767px){
     /* 导航栏 */
     .brank{
-        width:120px;
-        height:120px;
-        left:90px;
-    }
-    .brank img{
-        margin:46px 0 0 0 ;
+        display:none;
     }
     .sina{
         display:none;
@@ -223,40 +200,36 @@ a:hover{
         border:0;
     }
 
-    /* 路径导航 */
-    .nav2 {
-        margin-top: 70px;
+    .screen span{
+        margin-top:5px;
+        margin-left:-15px;
+    }
+    .screen ul{
+        margin-left:-15px;
+        width:300px;
+        height:30px;
+        list-style:none;
+        margin-left:35px;
+    }
+    .screen ul li{
+        width:60px;
+        line-height:30px;
+    }
+    .screen ul li a{
+        font-size:10px;
     }
 
-    /* 产品详细 */
-    .detail .content h1{
-        font-size:20px;
-        font-weight:600;
-    }
-    .detail .content h3{
-        font-size:15px;
-    }
-    .detail .content ul{
-        margin-top:20px;
-    }
-    .content ul li{
-        padding:5px;
-    }
-    .detail .test{
-        width:250px;
-        margin-left:5px;
-        margin-top:10px;
-    }
-    .detail .test label{
+    /* shoppings */
+    .shoppings .shopping p{
         font-size:10px;
-        font-weight:500;
     }
+
     footer img{
         width: 80px;
         margin-top: 10px
     }
     .foot-right span {
-        padding: 10px 5px;
+        padding: 10px 36px 10px 0px;
         font-size:10px;
     }
 }
