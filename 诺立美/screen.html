@@ -132,6 +132,14 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="./lib/swiper/package/js/swiper.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function(){
+            $('.screen ul li').mouseenter(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+            })
+        })
+    </script>
 </body>
 
 </html>
